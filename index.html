@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Store</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <h1>Random Store</h1>
+        </div>
+        <div class="linhaani"></div>
+        <br>
+    </header>
+
+    <div class="cont">
+
+        <div class="banner">
+            <img src="img/back/logo-cam.jpg" alt="banner loja">
+        </div>
+
+        <div class="catalogo" id="catalogo">
+
+            <div id="cat" class="tit">
+                <h1 id="catletra">Catálogo</h1>
+            </div>
+
+            <div class="camisas">
+                <div class="camisa" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="addcarrinho desativado">
+                        <label for="select">Tamanho:</label>
+                        <select id="select">
+                            <option value="P">P</option>
+                            <option value="M">M</option>
+                            <option value="G">G</option>
+                            <option value="GG">GG</option>
+                        </select>
+                        <label for="">Quantidade:</label>
+                        <input type="number" min="1" value="1" id="qtd">
+                        <button class="btaddcar" id="confirmacar">Adicionar</button>
+                    </div>
+                    <div class="btmais">
+                        <a href="#">
+                            <span class="material-icons">
+                                add
+                            </span>
+                        </a>
+                    </div>
+                    <img src="img/camisas/camisa1.png" alt="">
+                    <h2 id="nomeCamisa">ROMA II NIKE 20/21</h2>
+                </div>
+                <div class="camisa" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="addcarrinho desativado">
+                        <label for="select">Tamanho:</label>
+                        <select id="select">
+                            <option value="P">P</option>
+                            <option value="M">M</option>
+                            <option value="G">G</option>
+                            <option value="GG">GG</option>
+                        </select>
+                        <label for="">Quantidade:</label>
+                        <input type="number" min="1" value="1" id="qtd">
+                        <button class="btaddcar" id="confirmacar">Adicionar</button>
+                    </div>
+                    <div class="btmais">
+                        <a href="#">
+                            <span class="material-icons">
+                                add
+                            </span>
+                        </a>
+                    </div>
+                    <img src="img/camisas/camisa1.png" alt="">
+                    <h2 id="nomeCamisa">ROMA II NIKE 20/21</h2>
+                </div>
+                <div class="camisa" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="addcarrinho desativado">
+                        <label for="select">Tamanho:</label>
+                        <select id="select">
+                            <option value="P">P</option>
+                            <option value="M">M</option>
+                            <option value="G">G</option>
+                            <option value="GG">GG</option>
+                        </select>
+                        <label for="">Quantidade:</label>
+                        <input type="number" min="1" value="1" id="qtd">
+                        <button class="btaddcar" id="confirmacar">Adicionar</button>
+                    </div>
+                    <div class="btmais">
+                        <a href="#">
+                            <span class="material-icons">
+                                add
+                            </span>
+                        </a>
+                    </div>
+                    <img src="img/camisas/camisa1.png" alt="">
+                    <h2 id="nomeCamisa">ROMA II NIKE 20/21</h2>
+                </div>
+            </div>
+
+            <div class="aiuda">
+                <h2>Temos todos os modelos!!!</h2>
+            </div>
+        </div>
+
+        <div class="pedido" id="pedido">
+
+            <div id="opavei" class="tit2">
+                <h1 id="catletra">Pedido</h1>
+            </div>
+
+            <div class="pedidoall" data-aos="fade-in" data-aos-duration="1000">
+                <div class="pedidotxt">
+                    <h2>Inicie aqui seu pedido... Ou entre em contato direto (32) 99999-4279.</h2>
+                    <p>
+                        Aqui daremos início ao seu pedido feito pelo whatsapp.
+                    </p>
+                    <p>
+                        Para acrecentar os itens a lista de pedidos é só clicar no "+" no item desejado e informar o
+                        tamanho e a quantidade desejada. Após este passo pode inserir seu nome no campo "Nome:" e alguma
+                        observação no campo "Observações:" se achar necessário.
+                    </p>
+                    <p>
+                        Pronto! Agora é só aguardar enquanto checamos o estoque de nosso fornecedor e logo te
+                        retornaremos.
+                    </p>
+                    <p>
+                        Então vamos começar...
+                    </p>
+                </div>
+
+                <div class="pedidoform">
+                    <label for="">Nome:</label>
+                    <input placeholder="Gustavo Furtado" id="pedidonome" class="inpname" type="text">
+                    <hr class="sep">
+                    <label for="">Descrição do pedido:</label>
+                    <textarea placeholder="As entradas do seu pedido vão aparecer aqui. Pode editá-las se preferir..."
+                        class="inpdesc" type="text" rows="2" id="pedidodesc"></textarea>
+                    <hr class="sep">
+                    <label for="">Observações:</label>
+                    <textarea
+                        placeholder="Este campo é reservado para alguma observação ou reselva referente ao pedido. Todo detalhe é importante..."
+                        class="inpdesc" type="text" rows="2" id="obse"></textarea>
+                    <button onclick="fazerpedido()">Fazer Pedido!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="lateral">
+            <a target="_blank" href="https://www.instagram.com/gustavofurtadosjn/">
+                <div class="insta pink">
+                    <span class="material-icons">
+                        person
+                    </span>
+                </div>
+            </a>
+            <div class="linhamenu"></div>
+            <a href="#catalogo">
+                <div class="insta pink">
+                    <span class="material-icons">
+                        storefront
+                    </span>
+                </div>
+            </a>
+            <a href="#pedido">
+                <div class="insta green">
+                    <span class="material-icons">
+                        local_grocery_store
+                    </span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/animetit.js"></script>
+    <script src="./js/fazerpedido.js"></script>
+    <script src="./js/addcart.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
